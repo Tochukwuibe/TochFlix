@@ -7,6 +7,7 @@ body {
     color: white;
     padding: 0;
     margin: 0;
+    overflow-x: none
 }
 
 .container {
@@ -14,19 +15,19 @@ body {
     display: block
 }
 
+.bottom-line {
+    border-bottom: 8px solid #222;
+    padding: 2em 0;
+}
+
 h2 {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     margin: 0
 }
 
 p {
-    font-size: 1.627em;
-}
-
-.bottom-line {
-    border-bottom: 8px solid #222;
-    padding: 2em 0;
+    font-size: 1.2em;
 }
 
 .btn {
@@ -38,11 +39,6 @@ p {
     cursor: pointer
 }
 
-.btn-sm {
-    height: 35px;
-    width: 100px
-}
-
 .btn-primary {
     background-color: var(--primary);
 }
@@ -52,76 +48,83 @@ p {
     border: 1px solid #fff;
 }
 
+.btn-sm {
+    height: 35px;
+    width: 20%;
+    max-width: 88px;
+}
+
 .btn-lg {
-    width: 17.4em;
-    height: 60px;
-    padding: 5.6px 52px 5.6px 25.8px;
-    font-size: 1.5em;
+    width: 17em;
+    height: 40px;
+    padding: 1.5px 2px 1.5px 2px;
+    font-size: 1em;
 }
 
 .btn-md {
-    width: 17 .4em;
-    height: 60px;
-    padding: 3.6px 17px 3.6px 17px;
+    width: 60%;
+    height: 40px;
+    padding: 1.5px 2px 1.5px 2px;
     font-size: 1.1em;
 }
 
+.container {
+    padding: 0 0.2em;
+}
+
 .story {
-    width: 50%;
-    margin-top: 5em
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
 }
 
 .story-container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     justify-content: space-between;
-    margin: 0
+    margin: 0;
+    text-align: center;
 }
 
 .story-container img {
-    margin-bottom: 2em;
-    width: 488px;
-    height: 366px;
+    margin-bottom: 0;
+    width: 100%;
 }
 
-.story-container-reverse {
-    flex-direction: row;
-}
+/* LANDING START */
 
-/* LANDING PAGE START */
-
-.landing {
-    height: 80vh;
-    margin-top: 0
+.landing nav {
+    padding: 0 0.2em;
 }
 
 .landing nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 3em;
+    padding: 0 .7em;
 }
 
-.landing .container {
-    height: 100%
+.landing {
+    height: 70vh;
 }
 
 .landing h1 {
     margin: 0;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2.3em;
     color: var(--primary)
 }
 
-.landing-content {
+.landing .container {
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    text-align: center;
 }
 
-/* LANDING PAGE END */
+/* LANDING END */
 
 /* BILLING START */
 
@@ -138,7 +141,7 @@ p {
 .timeline-container .labels {
     display: flex;
     width: 100%;
-    margin: 2em 0;
+    margin-top: 1em;
 }
 
 .labels h2 {
@@ -146,37 +149,45 @@ p {
 }
 
 .billing .description {
-    margin: 2em;
+    margin: 2em 1em 1em 1em;
+    padding: 0 0 0 0.7em
 }
 
 .billing .description p {
     margin: 0;
+    display: inline
+}
+
+.billing .labels p {
+    font-size: 1em
 }
 
 #free30 {
-    flex-grow: 1
+    flex-grow: 1;
+    color: green;
+    flex-basis: 32%;
+    align-self: flex-end;
 }
 
 #first-bill {
     flex-grow: 6;
+    flex-basis: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 #last-date {
     flex-grow: 3;
+    flex-basis: 32%;
     align-self: flex-end;
-}
-
-#free30 {
-    color: green;
-    align-self: flex-end;
+    text-align: right
 }
 
 #first-bill h2 {
     color: lightgrey;
+    font-size: 1.2em
 }
 
 .three-day-reminder p {
@@ -191,17 +202,18 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em 0;
+    padding: .5em 0 1em 0;
 }
 
 .faq-container .title {
-    margin: 1em
+    margin: .7em;
+    text-align: center
 }
 
 .faq-item {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 80%;
     background-color: #222;
     padding: 1.3em;
     margin-bottom: .7em;
@@ -217,16 +229,21 @@ p {
 
 /* FAQ END  */
 
-/* CONTACT START */
-
 .contact-container {
-    width: 80%;
-    padding: 2em 2em 8em 8em;
-    color: lightgrey
+    padding-left: 1.5em;
+    padding-bottom: .4em
+}
+
+.contact-container .lists {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start
 }
 
 .contact-container p {
-    font-size: 13px;
+    font-size: .5em;
 }
 
 .contact-container .call {
@@ -236,10 +253,11 @@ p {
 .contact-container ul {
     list-style: none;
     padding: 0;
+    flex-basis: 50%;
 }
 
 .contact-container ul li {
-    margin: 1em
+    margin: .5em
 }
 
 .contact-container .lists {
@@ -252,4 +270,121 @@ p {
     padding: .1em;
 }
 
-/* CONTACT END */
+@media(min-width: 425px) {
+    .landing nav {
+        padding: 0 .7em;
+    }
+    .container {
+        padding: 0 .7em;
+    }
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+    .landing {
+        height: 60vh;
+    }
+    .landing nav {
+        padding: 0 1.4em;
+    }
+    .container {
+        padding: 0 1.4em;
+    }
+    .bottom-line {
+        padding: 4.7em 2.3em
+    }
+    .story-container img {
+        margin-bottom: 0;
+        width: 93%;
+    }
+    
+}
+
+@media(min-width: 1024px) {
+    h2 {
+        font-size: 3.43em;
+    }
+    p {
+        font-size: 1.9em;
+    }
+  
+    .btn-lg {
+        width: 26.5em;
+        height: 60px;
+        padding: 5.6px 20px 5.6px 20px;
+        font-size: 1.7em;
+        max-width: 425px;
+    }
+    .btn-md {
+        width: 60%;
+        height: 40px;
+        padding: 1.5px 2px 1.5px 2px;
+        font-size: 1.1em;
+    }
+    .bottom-line {
+        padding: 4.345em 2em
+    }
+    .billing .description {
+        width: 65%;
+        text-align: center;
+        margin: 3em;
+    }
+    .billing .labels p {
+        font-size: 1.5em
+    }
+    #first-bill h2 {
+        color: lightgrey;
+        font-size: 1.8em
+    }
+    .story-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .story-container-reverse {
+        flex-direction: row;
+    }
+    .story {
+        width: 85%;
+        margin-top: 2.4em;
+        text-align: left;
+        padding-right: 2.4em
+    }
+    .story-container-reverse .story {
+        padding-left: 2.4em
+    }
+    .story-container img {
+        min-height: 336px;
+        width: 100%
+    }
+    .hide-mobile {
+        display: inherit;
+    }
+    .contact-container ul {
+        list-style: none;
+        padding: 0;
+        flex-basis: 20%;
+    }
+    .contact-container {
+        padding: 2em 4em;
+    }
+    .faq-item {
+        width: 60%;
+        background-color: #222;
+    }
+}
+
+@media(min-width: 1100px) {
+    .container {
+        padding: 0 5.5em;
+    }
+    .story {
+        width: 65%;
+        margin-top: 2.4em;
+        text-align: left;
+        padding-right: 2.4em
+    }
+}

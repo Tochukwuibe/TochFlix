@@ -1,0 +1,324 @@
+:root {
+    --primary: #e50914
+}
+
+body {
+    background-color: rgba(0, 0, 0);
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 0 7.5em;
+    display: block
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0
+}
+
+p {
+    font-size: 1.627em;
+}
+
+.bottom-line {
+    border-bottom: 8px solid #222;
+    padding: 2em 0;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.btn-sm {
+    height: 35px;
+    width: 100px
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.btn-lg {
+    width: 17.4em;
+    height: 60px;
+    padding: 5.6px 52px 5.6px 25.8px;
+    font-size: 1.5em;
+}
+
+.btn-md {
+    width: 17 .4em;
+    height: 60px;
+    padding: 3.6px 17px 3.6px 17px;
+    font-size: 1.1em;
+}
+
+.story {
+    width: 50%;
+    margin-top: 5em
+}
+
+.story-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0
+}
+
+.story-container img {
+    margin-bottom: 2em;
+    width: 488px;
+    height: 366px;
+}
+
+.story-container-reverse {
+    flex-direction: row;
+}
+
+/* LANDING PAGE START */
+
+.landing {
+    height: 80vh;
+    margin-top: 0
+}
+
+.landing nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 3em;
+}
+
+.landing .container {
+    height: 100%
+}
+
+.landing h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--primary)
+}
+
+.landing-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+/* LANDING PAGE END */
+
+/* BILLING START */
+
+.billing .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-container {
+    width: 90%;
+}
+
+.timeline-container .labels {
+    display: flex;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.labels h2 {
+    font-size: 1.4em;
+}
+
+.billing .description {
+    margin: 2em;
+}
+
+.billing .description p {
+    margin: 0;
+}
+
+#free30 {
+    flex-grow: 1
+}
+
+#first-bill {
+    flex-grow: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+#last-date {
+    flex-grow: 3;
+    align-self: flex-end;
+}
+
+#free30 {
+    color: green;
+    align-self: flex-end;
+}
+
+#first-bill h2 {
+    color: lightgrey;
+}
+
+.three-day-reminder p {
+    margin: 0
+}
+
+/* BILLING END */
+
+/* FAQ START  */
+
+.faq-container .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.faq-container .title {
+    margin: 1em
+}
+
+.faq-item {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    background-color: #222;
+    padding: 1.3em;
+    margin-bottom: .7em;
+}
+
+.faq-item p {
+    margin: 0;
+}
+
+.faq-container button {
+    margin-top: 2em
+}
+
+/* FAQ END  */
+
+/* CONTACT START */
+
+.contact-container {
+    width: 80%;
+    padding: 2em 2em 8em 8em;
+    color: lightgrey
+}
+
+.contact-container p {
+    font-size: 13px;
+}
+
+.contact-container .call {
+    font-size: 18px;
+}
+
+.contact-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-container ul li {
+    margin: 1em
+}
+
+.contact-container .lists {
+    display: flex;
+    justify-content: space-between
+}
+
+.english-btn button {
+    width: 7em;
+    padding: .1em;
+}
+
+/* CONTACT END */
+
+/* Media queries */
+
+@media(max-width: 425px) {
+    h2 {
+        font-size: 2em;
+        font-weight: bold;
+        margin: 0
+    }
+    p {
+        font-size: 1em;
+    }
+    .btn-sm {
+        height: 35px;
+        width: 20%;
+    }
+    .btn-lg {
+        width: 80%;
+        height: 40px;
+        padding: 1.5px 2px 1.5px 2px;
+        font-size: 1em;
+    }
+    .btn-md {
+        width: 60%;
+        height: 40px;
+        padding: 1.5px 2px 1.5px 2px;
+        font-size: 1.1em;
+    }
+    .container {
+        padding: 0 0.2em;
+       
+    }
+    .story {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+    .story-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin: 0
+    }
+    .story-container img {
+        margin-bottom: 0;
+        width: 100%;
+        height: 366px;
+    }
+    .landing nav {
+        padding: 0 0.2em;
+    }
+    .landing {
+        height: 60vh;
+    }
+    .landing h1 {
+        font-size: 20px;
+    }
+
+    .contact-container .lists {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .contact-container {
+        width: 100%;
+        padding: 0;
+    }
+}
